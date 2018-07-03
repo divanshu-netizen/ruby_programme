@@ -53,7 +53,7 @@ fact.factorial(27)
 p "Your Final hash is :#{$hash}"
 
 
-# module is a way of grouping togather methods classes and constant
+# module is a way of grouping together methods classes and constant
 #1: module remove name space collision
 #2: implement mixin
 

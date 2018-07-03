@@ -30,7 +30,7 @@ second_each_child do |v|
 end
 
 ##  Now if we want we can reference a block the argument as a proc object,
-##  by adding  a parameter name with ampersand
+##  by adding a parameter name with ampersand
 
 ######################################################
 ######################################################

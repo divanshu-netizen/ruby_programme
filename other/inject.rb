@@ -13,7 +13,7 @@ p hash
 ###############################################
 ###############################################
 
-[1, 2, 3, 4].inject(5) do |result, element|
+ [1, 2, 3, 4].inject(5) do |result, element|
   p "=======#{result}=======#{element}"
   result + element
 end
@@ -176,3 +176,5 @@ end
 my_test  = MyTest.new
 a = my_test.method(:test)
 p a.call('Vinay')
+
+

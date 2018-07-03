@@ -1,3 +1,7 @@
+# Blocks are enclosed in a do / end statement or between brackets {}, and they can have multiple arguments.
+# The argument names are defined between two pipe | characters.
+
+
 proc_obj_without_block_not_possible = Proc.new # Proc class
 proc_obj_without_block_not_possible = proc.new # Kernel#proc
 
@@ -13,10 +17,10 @@ end
 
 p proc_obj_by_proc_class
 p proc_obj_by_proc_class.call
-p proc_obj_by_proc_class.call('Vinay')
-p proc_obj_by_proc_class.('Vinay')
-p proc_obj_by_proc_class['Vinay']
-p proc_obj_by_proc_class.call('Vinay', 'Brijesh')
+p proc_obj_by_proc_class.call('Ruby')
+p proc_obj_by_proc_class.('Ruby')
+p proc_obj_by_proc_class['Ruby']
+p proc_obj_by_proc_class.call('Ruby', 'Python')
 
 proc_obj_by_kernel_proc = proc do |str|
   "Hello #{str}"
@@ -24,10 +28,10 @@ end
 
 p proc_obj_by_kernel_proc
 p proc_obj_by_kernel_proc.call
-p proc_obj_by_kernel_proc.call('Vinay')
-p proc_obj_by_kernel_proc.('Vinay')
-p proc_obj_by_kernel_proc['Vinay']
-p proc_obj_by_kernel_proc.call('Vinay', 'Brijesh')
+p proc_obj_by_kernel_proc.call('Ruby')
+p proc_obj_by_kernel_proc.('Ruby')
+p proc_obj_by_kernel_proc['Ruby']
+p proc_obj_by_kernel_proc.call('Ruby', 'Python')
 
 ###################################Alteratively########################
 #######################################################################
@@ -42,45 +46,8 @@ end
 
 # p proc_obj_by_lambda
 # p proc_obj_by_lambda.call
-p proc_obj_by_lambda.call('Vinay')
-p proc_obj_by_lambda.('Vinay')
-p proc_obj_by_lambda['Vinay']
-# p proc_obj_by_lambda.call('Vinay', 'Brijesh')
-
-
-################### Difference between proc and lambda: 1 #########################
-###################################################################################
-
-def return_from_proc
-  prok = proc { p 'i am in proc block'}
-  prok.call()
-  return 'i am proc return value'
-end
-
-
-
-def return_from_lambda
-  lamda = proc { p 'i am in lambda block'}
-  lamda.call()
-  return 'i am lambda return value'
-end
-
-return_from_proc
-return_from_lambda
-
-
-################### Difference between proc and lambda: 2 #########################
-###################################################################################
-
-prok = proc { |a,b| "HEllo#{a}===and==#{b}"}
-prok.call
-prok.call('Ajay')
-prok.call('Ajay', 'Vijay')
-prok.call('Ajay', 'Vijay', 'Sanjay')
-
-stabby_lambda = ->(a,b)  { "HEllo#{a}===and==#{b}"}
-stabby_lambda.call
-stabby_lambda.call('Ajay')
-stabby_lambda.call('Ajay', 'Vijay')
-stabby_lambda.call('Ajay', 'Vijay', 'Sanjay')
+p proc_obj_by_lambda.call('Ruby')
+p proc_obj_by_lambda.('Ruby')
+p proc_obj_by_lambda['Ruby']
+# p proc_obj_by_lambda.call('Ruby', 'Python')
 
