@@ -2,5 +2,5 @@
 source "http://rubygems.org"
 
 ruby '2.2.2'
-gem 'rack', '~> 1.6.11'
+gem 'rack', '~> 1.6.12'
 gem 'byebug'
